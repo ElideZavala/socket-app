@@ -1,0 +1,1 @@
+const socket = io(); // EVIAMOS LOS EVENTOS AL SERVIDOR. 
