@@ -20,6 +20,11 @@ const io = SocketIO(server);  // Escuchamos la configuracion de Socket, necesita
 // websockets (Coneccion de un nuevo cliente) igual resivimos el socket del cliente. 
 io.on('connection', (socket) => {
 	console.log('new connection', socket.id);
+
+	// Escuchar el evento socket y lo que vamos a recibir (data) que envia el objeto ('chat:message). 
+	socket.on('chat:message', (data) => {
+		console.log(data)
+	});
 })
 
 
