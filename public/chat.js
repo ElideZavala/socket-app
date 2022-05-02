@@ -13,6 +13,7 @@ btn.addEventListener('click', function () {
 		username: username.value,
 		message: message.value
 	});
+	message.value = '';
 });
 
 message.addEventListener('keypress', function () {

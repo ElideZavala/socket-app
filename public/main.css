@@ -6,19 +6,17 @@ body {
 
 #chat-container {
 	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+	flex-direction: row-reverse;
+	justify-content: space-around;
+	align-items: flex-start;
 	height: 100vh;
 	background-color: lightgreen;
 }
 
 #output {
-	/* display: flex; */
-	/* justify-content: center; */
+	margin-top: 3rem;
 	color: #aaa;
 	padding: 1.5rem 20rem;
-	margin: 5px 0;
 	background-color: #fff;
 	border: 1px solid lightcoral;
 	box-shadow: 0 0 10px lightcoral;
@@ -26,21 +24,37 @@ body {
 }
 
 #actions p {
-	padding: 1rem 0;
-	margin: 0 20px;
+	display: inline;
+	padding: 0 1rem;
+	margin-bottom: 1rem;
 	color: #fff;
+	background-color: lightskyblue;
 }
 
 .message { 
+	margin-top: 3rem;
 	padding: 3rem;
 	background-color: lightcoral;
 }
 
 .message input {
-	padding: 1rem;
 	border: none;
 	outline: none;
 	font-size: 2rem;
+	width: 100%;
+	border-top: 1rem solid lightcoral;
+}
+
+.message #username {
+	/* padding-bottom: 1rem; */
+	line-height: 1;
+	text-indent: 10px;
+}
+
+.message #message {
+	line-height: 1;
+	text-indent: 10px;
+	padding-bottom: 5rem;
 }
 
 .message button {
