@@ -16,4 +16,9 @@ btn.addEventListener('click', function () {
 });
 
 // Escuchar lo que el servidor esta emitiendo. 
-socket.on('chat:message'); 
+socket.on('chat:message', function (data) {
+	output.innerHTML +=`<p>
+		<strong>${data.username}</strong>
+		: ${data.message} 
+	</p>`
+}); 

@@ -14,14 +14,15 @@ body {
 }
 
 #output {
-	display: flex;
-	justify-content: center;
+	/* display: flex; */
+	/* justify-content: center; */
 	color: #aaa;
 	padding: 1.5rem 20rem;
 	margin: 5px 0;
 	background-color: #fff;
 	border: 1px solid lightcoral;
 	box-shadow: 0 0 10px lightcoral;
+	font-size: 2rem;
 }
 
 #actions p {

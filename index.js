@@ -23,7 +23,9 @@ io.on('connection', (socket) => {
 
 	// Escuchar el evento socket y lo que vamos a recibir (data) que envia el objeto ('chat:message). 
 	socket.on('chat:message', (data) => {
-		console.log(data)
+		// Enviar a todos incluyendome a mi. 
+		// A todos los socket que estan conectados emitirles un evento. Recibir y reenviar.  
+		io.sockets.emit('chat:message',  data);
 	});
 })
 
