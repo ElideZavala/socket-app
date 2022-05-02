@@ -27,6 +27,12 @@ io.on('connection', (socket) => {
 		// A todos los socket que estan conectados emitirles un evento. Recibir y reenviar.  
 		io.sockets.emit('chat:message',  data);
 	});
+
+	socket.on('chat:typing', (data) => {
+		console.log(data);
+		// Emitir un dato ecepto YO.
+		socket.broadcast.emit('chat:typing', data)
+	});
 })
 
 
