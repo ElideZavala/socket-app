@@ -14,3 +14,6 @@ btn.addEventListener('click', function () {
 		message: message.value
 	});
 });
+
+// Escuchar lo que el servidor esta emitiendo. 
+socket.on('chat:message'); 
